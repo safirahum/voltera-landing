@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Voltera Energi | Baterai kendaraan listrik Aegis LFP 90</title>
+<meta name="description" content="Aegis LFP 90: baterai kendaraan listrik dengan garansi 8 tahun, tiga lapis proteksi, dan 95% material dapat didaur ulang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2F3;--sf:#fff;--ink:#0B222C;--mut:#46606A;--ln:#CCD7DB;--br:#0E6B5E;--on:#fff;--am:#F2B134;--tint:#E0EAEC;--hd:68px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1A21;--sf:#10252E;--ink:#E6EFF0;--mut:#9DB3BA;--ln:#22404B;--br:#46C2AB;--on:#06201B;--tint:#12303A}}
+:root[data-theme="dark"]{--bg:#0A1A21;--sf:#10252E;--ink:#E6EFF0;--mut:#9DB3BA;--ln:#22404B;--br:#46C2AB;--on:#06201B;--tint:#12303A}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hd) + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 'Public Sans',system-ui,sans-serif}
+h1,h2,h3,.f{font-family:'Schibsted Grotesk','Public Sans',system-ui,sans-serif;line-height:1.12;letter-spacing:-.02em;margin:0}
+p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--br);outline-offset:3px}
+[hidden]{display:none!important}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.8em 1.4em;border-radius:6px;font:600 .95rem 'Public Sans',sans-serif;background:var(--br);color:var(--on);border:2px solid var(--br);text-decoration:none;cursor:pointer;transition:filter .2s}
+.btn:hover{filter:brightness(1.1)}
+.btn.g{background:transparent;color:var(--ink);border-color:var(--ln)}
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;height:var(--hd);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;align-items:center;height:100%;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.25rem 'Schibsted Grotesk',sans-serif;letter-spacing:-.03em}
+nav{margin-left:auto;display:flex;align-items:center;gap:26px}
+nav a:not(.btn){text-decoration:none;font-weight:500;font-size:.95rem;padding:6px 0;border-bottom:2px solid transparent}
+nav a[aria-current=page]{border-color:var(--br)}
+nav .btn{padding:.55em 1.1em}
+#mt{display:none;margin-left:auto;background:none;border:1px solid var(--ln);color:var(--ink);border-radius:6px;padding:8px 12px;font:600 .9rem 'Public Sans'}
+/* hero slider */
+.hero{position:relative;height:calc(100svh - var(--hd));min-height:600px;background:#0A2531;color:#EAF2F1;overflow:hidden}
+.slide{position:absolute;inset:0;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:32px;padding:0 max(24px,calc((100vw - 1160px)/2 + 24px)) 70px;opacity:0;visibility:hidden;transition:opacity .9s,visibility .9s}
+.slide.on{opacity:1;visibility:visible}
+.s1{background:radial-gradient(55% 75% at 78% 45%,#134B5C,transparent 70%)}
+.s2{background:radial-gradient(55% 75% at 78% 45%,#0F4A45,transparent 70%)}
+.s3{background:radial-gradient(55% 75% at 78% 45%,#2A4A3A,transparent 70%)}
+.slide .tx{max-width:620px}
+.slide.on .tx{animation:in .9s both}
+@keyframes in{from{opacity:0;transform:translateY(18px)}}
+.slide h1,.slide h2{font-size:clamp(2.1rem,4.6vw,3.6rem);font-weight:800;margin-bottom:20px}
+.slide p{font-size:1.1rem;color:#B9CDD1;max-width:52ch;margin-bottom:30px}
+.slide .row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn{background:var(--am);border-color:var(--am);color:#1B1500}
+.hero .btn.g{background:transparent;color:#EAF2F1;border-color:#5B7C86}
+.hero :focus-visible{outline-color:var(--am)}
+.gfx{width:100%;max-width:470px;justify-self:center}
+.gfx svg{width:100%;height:auto;display:block}
+.ctl{position:absolute;left:0;right:0;bottom:0;padding:18px max(24px,calc((100vw - 1160px)/2 + 24px));display:flex;align-items:center;gap:18px;background:linear-gradient(transparent,rgba(5,20,28,.7))}
+.gauge{display:flex;gap:4px;padding:5px;border:2px solid #86A3AB;border-radius:6px;position:relative;margin-right:5px}
+.gauge::after{content:"";position:absolute;right:-7px;top:9px;width:5px;height:12px;background:#86A3AB;border-radius:0 2px 2px 0}
+.cell{width:46px;height:20px;border:0;background:rgba(255,255,255,.14);padding:0;cursor:pointer;border-radius:2px;overflow:hidden;position:relative}
+.cell i{position:absolute;inset:0;background:var(--am);width:0}
+.cell.done i{width:100%}
+.cell.on i{animation:fill 7s linear forwards}
+.hero.p .cell.on i{animation-play-state:paused}
+@keyframes fill{to{width:100%}}
+.ctl .n{font-size:.9rem;color:#B9CDD1;font-variant-numeric:tabular-nums}
+.ctl button.ic{margin-left:auto;background:none;border:1px solid #5B7C86;color:#EAF2F1;border-radius:6px;padding:7px 14px;font:500 .85rem 'Public Sans';cursor:pointer}
+.ctl button.ic+button.ic{margin-left:0}
+/* sections */
+section{padding:88px 0}
+.alt{background:var(--tint)}
+.h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:700;margin-bottom:16px;max-width:20ch}
+.lead{color:var(--mut);font-size:1.08rem;max-width:58ch}
+.trust{padding:0;border-bottom:1px solid var(--ln)}
+.trust ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.trust li{padding:26px 22px;border-left:1px solid var(--ln);font-size:.9rem;color:var(--mut)}
+.trust li:first-child{border-left:0;padding-left:0}
+.trust b{display:block;color:var(--ink);font:700 1.05rem 'Schibsted Grotesk';margin-bottom:2px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+dl.sp{margin:0;background:var(--sf);border:1px solid var(--ln);border-radius:10px}
+dl.sp div{display:flex;justify-content:space-between;gap:16px;padding:15px 22px;border-top:1px solid var(--ln)}
+dl.sp div:first-child{border-top:0}
+dl.sp dt{color:var(--mut)}dl.sp dd{margin:0;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.prom{margin-top:34px;display:grid;gap:22px}
+.prom h3{font-size:1.15rem;margin-bottom:4px}.prom p{color:var(--mut)}
+.steps{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s}
+.steps li{padding:0 26px 0 0;position:relative;counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--br);color:var(--on);font:700 .95rem 'Schibsted Grotesk';margin-bottom:16px;position:relative;z-index:1}
+.steps li::after{content:"";position:absolute;top:17px;left:34px;right:0;height:2px;background:var(--ln)}
+.steps li:last-child::after{display:none}
+.steps h3{font-size:1.1rem;margin-bottom:6px}.steps p{color:var(--mut);font-size:.95rem}
+.cta{background:#0A2531;color:#EAF2F1;padding:72px 0}
+.cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cta h2{font-size:clamp(1.7rem,3vw,2.3rem);max-width:22ch}.cta p{color:#B9CDD1;margin-top:10px;max-width:50ch}
+.cta .btn{background:var(--am);border-color:var(--am);color:#1B1500}.cta .btn.g{background:transparent;color:#EAF2F1;border-color:#5B7C86}
+/* contact */
+.ct{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.ct address{font-style:normal;margin-top:28px;display:grid;gap:18px}
+.ct address b{display:block;font-size:.88rem;color:var(--mut);font-weight:500}
+form{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fd{display:grid;gap:6px}.fd.w{grid-column:1/-1}
+label{font-weight:600;font-size:.9rem}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--ln);border-radius:6px;padding:11px 13px;width:100%}
+textarea{min-height:110px;resize:vertical}
+[aria-invalid=true]{border-color:#C0392B}
+.er{color:#C0392B;font-size:.85rem;min-height:1.2em}
+:root[data-theme="dark"] .er{color:#FF8A7A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .er{color:#FF8A7A}}
+.ok{grid-column:1/-1;padding:16px;border-left:4px solid var(--br);background:var(--tint);border-radius:0 6px 6px 0}
+footer{border-top:1px solid var(--ln);padding:36px 0;color:var(--mut);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer p{max-width:60ch}
+/* product page */
+.ph{padding:72px 0 64px}
+.ph .split{align-items:center}
+.ph h1{font-size:clamp(2.2rem,4.4vw,3.4rem);font-weight:800;margin-bottom:18px}
+.panel{background:#0A2531;border-radius:14px;padding:28px}
+.panel svg{width:100%;height:auto;display:block}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:2px solid var(--ink)}
+.facts div{padding:18px 18px 0 0}
+.facts b{display:block;font:800 clamp(1.7rem,3vw,2.4rem) 'Schibsted Grotesk';letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.facts span{color:var(--mut);font-size:.9rem}
+.adv{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:64px}
+.adv li{padding:26px 0;border-top:1px solid var(--ln)}
+.adv h3{font-size:1.25rem;margin-bottom:8px}
+.adv p{color:var(--mut)}
+.adv .pf{margin-top:10px;color:var(--ink);font-size:.92rem;padding-left:14px;border-left:3px solid var(--am)}
+.cmp{margin-top:40px;display:grid;gap:30px}
+.cmp h3{font-size:1.05rem;margin-bottom:10px}
+.cmp small{color:var(--mut);font-weight:400;font-family:'Public Sans'}
+.bar{display:grid;grid-template-columns:120px 1fr;align-items:center;gap:12px;margin:6px 0;font-size:.9rem}
+.bar div{background:var(--sf);border-radius:4px;height:30px;overflow:hidden;border:1px solid var(--ln)}
+.bar i{display:flex;align-items:center;justify-content:flex-end;padding-right:10px;height:100%;width:0;background:var(--br);color:var(--on);font:700 .85rem 'Schibsted Grotesk';font-style:normal;transition:width 1.3s cubic-bezier(.2,.8,.2,1);white-space:nowrap}
+.bar.o i{background:#8AA0A8;color:#0B222C}
+.in .bar i{width:var(--w)}
+table{width:100%;border-collapse:collapse;background:var(--sf);border:1px solid var(--ln);margin-top:36px}
+th,td{text-align:left;padding:13px 20px;border-top:1px solid var(--ln)}
+tr:first-child th,tr:first-child td{border-top:0}
+th{font-weight:500;color:var(--mut);width:42%}
+td{font-weight:600}
+details{border-top:1px solid var(--ln);padding:18px 0}
+details:last-of-type{border-bottom:1px solid var(--ln)}
+summary{cursor:pointer;font:700 1.1rem 'Schibsted Grotesk';list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:1.4rem;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--mut);margin-top:10px;max-width:68ch}
+@media (max-width:860px){
+ :root{--hd:62px}
+ #mt{display:block}
+ nav{display:none;position:absolute;top:var(--hd);left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;gap:0;padding:12px 24px 20px;border-bottom:1px solid var(--ln)}
+ nav.o{display:flex}nav a:not(.btn){padding:12px 0}
+ .slide{grid-template-columns:1fr;align-content:center;gap:12px;padding-bottom:84px}
+ .gfx{max-width:210px;order:-1}
+ .slide p{font-size:1rem;margin-bottom:20px}
+ .hero{min-height:640px}
+ .ctl .n{display:none}
+ .split,.ct{grid-template-columns:1fr;gap:36px}
+ .trust ul{grid-template-columns:1fr 1fr}.trust li:nth-child(3){border-left:0;padding-left:0}
+ .steps{grid-template-columns:1fr 1fr;row-gap:30px}
+ .facts{grid-template-columns:1fr 1fr}
+ .adv{grid-template-columns:1fr}
+ form{grid-template-columns:1fr;padding:22px}
+ section{padding:64px 0}
+ .bar{grid-template-columns:90px 1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.cell.on i{width:100%}.bar i{width:var(--w)}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="logo" href="#/" aria-label="Voltera Energi, beranda">
+   <svg width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="1" width="28" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="30" y="7" width="3" height="8" rx="1" fill="currentColor"/><rect x="5" y="5" width="6" height="12" rx="1" fill="var(--br)"/><rect x="13" y="5" width="6" height="12" rx="1" fill="var(--br)"/><rect x="21" y="5" width="4" height="12" rx="1" fill="#F2B134"/></svg>
+   Voltera
+  </a>
+  <button id="mt" aria-expanded="false" aria-controls="nv">Menu</button>
+  <nav id="nv" aria-label="Utama">
+   <a href="#/" data-r="home">Beranda</a>
+   <a href="#/produk" data-r="produk">Produk Aegis</a>
+   <a href="#/tentang">Pengujian</a>
+   <a href="#/kontak">Kontak</a>
+   <a class="btn" href="#/kontak">Minta penawaran</a>
+  </nav>
+ </div>
+</header>
+
+<!-- ============ HALAMAN 1: LANDING ============ -->
+<main id="home">
+ <div class="hero" id="hero" aria-roledescription="carousel" aria-label="Sorotan produk">
+  <div class="slide s1 on" aria-roledescription="slide">
+   <div class="tx">
+    <h1>Daya yang bisa Anda andalkan, dari kota sampai pelosok.</h1>
+    <p>Aegis LFP 90 adalah baterai kendaraan listrik terbaru dari Voltera, dirancang untuk panas, hujan, dan jalan Indonesia, dengan garansi tertulis 8 tahun.</p>
+    <div class="row"><a class="btn" href="#/produk">Lihat keunggulan Aegis</a><a class="btn g" href="#/kontak">Bicara dengan tim kami</a></div>
+   </div>
+   <div class="gfx"><svg data-pack="0.8" viewBox="0 0 430 280" role="img" aria-label="Ilustrasi pack baterai terisi 80 persen"></svg></div>
+  </div>
+  <div class="slide s2" aria-roledescription="slide">
+   <div class="tx">
+    <h2>Keselamatan dulu, baru performa.</h2>
+    <p>Kimia LFP yang stabil, sistem manajemen baterai, dan pendingin cair bekerja bersama. Dalam uji kami, sel tetap stabil sampai 270 °C.</p>
+    <div class="row"><a class="btn" href="#/produk">Pelajari tiga lapis proteksi</a></div>
+   </div>
+   <div class="gfx"><svg viewBox="0 0 420 300" role="img" aria-label="Tiga lapis proteksi: kimia LFP 75%, BMS 85%, pendingin cair 95% efektif">
+    <g fill="none" stroke-width="14" transform="rotate(-90 210 150)">
+     <circle cx="210" cy="150" r="120" stroke="rgba(255,255,255,.12)"/><circle cx="210" cy="150" r="120" stroke="#F2B134" stroke-linecap="round" stroke-dasharray="565 754"/>
+     <circle cx="210" cy="150" r="90" stroke="rgba(255,255,255,.12)"/><circle cx="210" cy="150" r="90" stroke="#5FD0B8" stroke-linecap="round" stroke-dasharray="480 565"/>
+     <circle cx="210" cy="150" r="60" stroke="rgba(255,255,255,.12)"/><circle cx="210" cy="150" r="60" stroke="#8EC7E8" stroke-linecap="round" stroke-dasharray="358 377"/></g>
+    <text x="210" y="152" text-anchor="middle" fill="#EAF2F1" font-family="Schibsted Grotesk,sans-serif" font-weight="800" font-size="40">3 lapis</text>
+    <text x="210" y="176" text-anchor="middle" fill="#B9CDD1" font-family="Public Sans,sans-serif" font-size="14">proteksi aktif</text></svg></div>
+  </div>
+  <div class="slide s3" aria-roledescription="slide">
+   <div class="tx">
+    <h2>Dibuat dengan bijak, dipakai sampai tuntas.</h2>
+    <p>Sebanyak 95% material Aegis dapat dikembalikan ke rantai produksi. Kami menerima baterai purna pakai dari pelanggan tanpa biaya tambahan.</p>
+    <div class="row"><a class="btn" href="#/kontak">Tanya program daur ulang</a></div>
+   </div>
+   <div class="gfx"><svg viewBox="0 0 420 300" role="img" aria-label="Siklus produksi, pemakaian, dan daur ulang">
+    <circle cx="210" cy="150" r="105" fill="none" stroke="#5FD0B8" stroke-width="3" stroke-dasharray="10 8"/>
+    <g fill="#F2B134"><circle cx="210" cy="45" r="11"/><circle cx="301" cy="202" r="11"/><circle cx="119" cy="202" r="11"/></g>
+    <g fill="#EAF2F1" font-family="Public Sans,sans-serif" font-size="14" font-weight="500"><text x="210" y="24" text-anchor="middle">Produksi</text><text x="320" y="232" text-anchor="middle">Pemakaian</text><text x="100" y="232" text-anchor="middle">Daur ulang</text></g>
+    <text x="210" y="158" text-anchor="middle" fill="#EAF2F1" font-family="Schibsted Grotesk,sans-serif" font-weight="800" font-size="52">95%</text>
+    <text x="210" y="182" text-anchor="middle" fill="#B9CDD1" font-family="Public Sans,sans-serif" font-size="13">material kembali</text></svg></div>
+  </div>
+  <div class="ctl">
+   <div class="gauge" role="tablist" aria-label="Pilih slide">
+    <button class="cell on" role="tab" aria-selected="true" aria-label="Slide 1"><i></i></button>
+    <button class="cell" role="tab" aria-selected="false" aria-label="Slide 2"><i></i></button>
+    <button class="cell" role="tab" aria-selected="false" aria-label="Slide 3"><i></i></button>
+   </div>
+   <span class="n" id="cnt" aria-live="polite">Slide 1 dari 3</span>
+   <button class="ic" id="pv" aria-label="Slide sebelumnya">Sebelumnya</button>
+   <button class="ic" id="nx" aria-label="Slide berikutnya">Berikutnya</button>
+   <button class="ic" id="ps" aria-pressed="false">Jeda</button>
+  </div>
+ </div>
+
+ <section class="trust" aria-label="Sertifikasi">
+  <div class="wrap"><ul>
+   <li><b>UN 38.3</b>Aman untuk pengiriman baterai lithium</li>
+   <li><b>IEC 62619</b>Standar keselamatan baterai industri</li>
+   <li><b>SNI</b>Terdaftar untuk pasar Indonesia</li>
+   <li><b>ISO 9001</b>Produksi dengan sistem mutu teraudit</li>
+  </ul></div>
+ </section>
+
+ <section id="info">
+  <div class="wrap split">
+   <div>
+    <h2 class="h2">Aegis LFP 90 kami uji lebih keras daripada cara Anda memakainya.</h2>
+    <p class="lead">Armada logistik, bus kota, dan kendaraan pribadi punya satu kebutuhan yang sama: baterai yang tidak mengejutkan. Aegis dibangun untuk itu.</p>
+    <div class="prom">
+     <div><h3>Tahan iklim tropis</h3><p>Beroperasi stabil pada suhu lingkungan hingga 55 °C dan rating IP67 untuk banjir dan debu.</p></div>
+     <div><h3>Isi ulang tanpa menunggu lama</h3><p>10 sampai 80% dalam 18 menit pada pengisi daya cepat DC.</p></div>
+     <div><h3>Jaminan yang tertulis</h3><p>8 tahun atau 200.000 km, dengan kapasitas minimal 70% di akhir masa garansi.</p></div>
+    </div>
+   </div>
+   <dl class="sp" aria-label="Ringkasan spesifikasi">
+    <div><dt>Kapasitas</dt><dd>90 kWh</dd></div>
+    <div><dt>Kimia sel</dt><dd>LFP (lithium besi fosfat)</dd></div>
+    <div><dt>Umur siklus</dt><dd>3.000+ siklus</dd></div>
+    <div><dt>Pengisian cepat</dt><dd>18 menit (10–80%)</dd></div>
+    <div><dt>Proteksi</dt><dd>IP67</dd></div>
+    <div><dt>Garansi</dt><dd>8 tahun / 200.000 km</dd></div>
+   </dl>
+  </div>
+ </section>
+
+ <section class="alt" id="tentang">
+  <div class="wrap">
+   <h2 class="h2">Empat tahap sebelum Aegis sampai ke kendaraan Anda.</h2>
+   <p class="lead">Setiap klaim di halaman ini punya data uji di belakangnya, dan hasilnya kami bagikan kepada calon pelanggan.</p>
+   <ol class="steps">
+    <li><h3>Uji sel</h3><p>12.000 jam siklus pengisian dan pengosongan di ruang bersuhu terkendali.</p></li>
+    <li><h3>Uji pack</h3><p>Getaran, rendam air, dan panas 55 °C sesuai kondisi jalan sebenarnya.</p></li>
+    <li><h3>Sertifikasi independen</h3><p>Pengujian oleh laboratorium pihak ketiga, bukan oleh kami sendiri.</p></li>
+    <li><h3>Garansi tertulis</h3><p>Syarat garansi dan batas kapasitas dicantumkan jelas di kontrak.</p></li>
+   </ol>
+  </div>
+ </section>
+
+ <div class="cta">
+  <div class="wrap">
+   <div><h2>Siap mengganti baterai armada Anda?</h2><p>Sampaikan jenis kendaraan dan jumlah unitnya. Tim teknis kami menyiapkan perhitungan biaya dalam 2 hari kerja.</p></div>
+   <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#/kontak">Minta penawaran</a><a class="btn g" href="#/produk">Lihat spesifikasi lengkap</a></div>
+  </div>
+ </div>
+
+ <section id="kontak">
+  <div class="wrap ct">
+   <div>
+    <h2 class="h2">Bicara langsung dengan tim teknis kami.</h2>
+    <p class="lead">Kami membalas pesan di hari kerja yang sama atau paling lambat 1×24 jam.</p>
+    <address>
+     <div><b>Kantor dan pabrik</b>Jl. Industri Hijau No. 12, Kawasan Industri, Bekasi 17530</div>
+     <div><b>Telepon</b><a href="tel:+62215000123">(021) 5000 123</a></div>
+     <div><b>Email</b><a href="mailto:halo@voltera.example">halo@voltera.example</a></div>
+     <div><b>Jam layanan</b>Senin sampai Jumat, 08.00–17.00 WIB</div>
+    </address>
+   </div>
+   <form id="fm" novalidate>
+    <div class="fd"><label for="nm">Nama</label><input id="nm" name="nama" autocomplete="name" required><span class="er" id="e-nm"></span></div>
+    <div class="fd"><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required><span class="er" id="e-em"></span></div>
+    <div class="fd"><label for="pr">Perusahaan (opsional)</label><input id="pr" name="perusahaan" autocomplete="organization"></div>
+    <div class="fd"><label for="kb">Kebutuhan</label><select id="kb"><option>Armada kendaraan komersial</option><option>Produsen kendaraan listrik</option><option>Bengkel dan konversi</option><option>Lainnya</option></select></div>
+    <div class="fd w"><label for="ps2">Pesan</label><textarea id="ps2" required placeholder="Contoh: kami mengoperasikan 40 bus listrik dan ingin mengganti baterai bertahap."></textarea><span class="er" id="e-ps"></span></div>
+    <div class="fd w"><button class="btn" type="submit">Kirim pesan</button></div>
+    <div class="ok" id="ok" role="status" hidden></div>
+   </form>
+  </div>
+ </section>
+</main>
+
+<!-- ============ HALAMAN 2: PRODUK ============ -->
+<main id="produk" hidden>
+ <section class="ph">
+  <div class="wrap">
+   <div class="split">
+    <div>
+     <h1>Aegis LFP 90, baterai yang dirancang untuk bertahan lebih lama.</h1>
+     <p class="lead">Peluncuran terbaru Voltera untuk kendaraan listrik penumpang dan komersial. Setiap keunggulan di bawah ini kami sertai bukti ujinya.</p>
+     <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap"><a class="btn" href="#/kontak">Minta penawaran</a><a class="btn g" href="#spek" data-sc="spek">Lihat spesifikasi</a></div>
+    </div>
+    <div class="panel"><svg data-pack="0.8" viewBox="0 0 430 280" role="img" aria-label="Pack baterai Aegis LFP 90 terisi 80 persen"></svg></div>
+   </div>
+   <div class="facts">
+    <div><b>90 kWh</b><span>Kapasitas pack</span></div>
+    <div><b>3.000+</b><span>Siklus pengisian</span></div>
+    <div><b>18 menit</b><span>Isi 10 sampai 80%</span></div>
+    <div><b>8 tahun</b><span>Garansi, atau 200.000 km</span></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="alt">
+  <div class="wrap">
+   <h2 class="h2">Enam keunggulan Aegis dan buktinya.</h2>
+   <ul class="adv">
+    <li><h3>Kimia LFP yang stabil</h3><p>Besi fosfat tidak melepas oksigen saat panas, sehingga risiko api jauh lebih rendah daripada NMC.</p><p class="pf">Lulus uji tusuk paku tanpa api atau ledakan.</p></li>
+    <li><h3>Manajemen baterai tiga lapis</h3><p>BMS memantau tegangan, arus, dan suhu tiap modul, lalu memutus aliran sebelum batas aman terlewati.</p><p class="pf">Respons pemutusan di bawah 10 milidetik pada uji korsleting.</p></li>
+    <li><h3>Pendingin cair aktif</h3><p>Suhu antar sel dijaga selisih maksimal 3 °C, jadi sel menua merata dan umur pack lebih panjang.</p><p class="pf">Diuji 500 jam pada suhu lingkungan 55 °C.</p></li>
+    <li><h3>Tahan banjir dan debu</h3><p>Casing aluminium bersegel dengan rating IP67 untuk jalan berlubang, genangan, dan musim hujan.</p><p class="pf">Direndam 1 meter selama 30 menit tanpa rembesan.</p></li>
+    <li><h3>Pengisian cepat yang aman bagi sel</h3><p>Profil pengisian adaptif menurunkan arus saat sel hangat agar kapasitas tidak cepat turun.</p><p class="pf">Kapasitas 92% setelah 1.000 siklus isi cepat.</p></li>
+    <li><h3>Dapat didaur ulang</h3><p>Desain modular memudahkan pembongkaran, dan 95% material kembali ke produksi.</p><p class="pf">Program ambil kembali tersedia untuk pelanggan korporat.</p></li>
+   </ul>
+  </div>
+ </section>
+
+ <section>
+  <div class="wrap">
+   <h2 class="h2">Aegis dibandingkan baterai NMC konvensional.</h2>
+   <p class="lead">Perbandingan pada kelas kapasitas yang sama, berdasarkan data uji internal Voltera.</p>
+   <div class="cmp" id="cmp">
+    <div><h3>Umur siklus</h3><div class="bar"><span>Aegis LFP</span><div><i style="--w:100%">3.000</i></div></div><div class="bar o"><span>NMC</span><div><i style="--w:50%">1.500</i></div></div></div>
+    <div><h3>Suhu awal thermal runaway (°C)</h3><div class="bar"><span>Aegis LFP</span><div><i style="--w:100%">270</i></div></div><div class="bar o"><span>NMC</span><div><i style="--w:78%">210</i></div></div></div>
+    <div><h3>Waktu isi 10–80% <small>(lebih singkat lebih baik)</small></h3><div class="bar"><span>Aegis LFP</span><div><i style="--w:56%">18 menit</i></div></div><div class="bar o"><span>NMC</span><div><i style="--w:100%">32 menit</i></div></div></div>
+    <div><h3>Material dapat didaur ulang (%)</h3><div class="bar"><span>Aegis LFP</span><div><i style="--w:95%">95</i></div></div><div class="bar o"><span>NMC</span><div><i style="--w:70%">70</i></div></div></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="alt" id="spek">
+  <div class="wrap">
+   <h2 class="h2">Spesifikasi lengkap.</h2>
+   <table><tbody>
+    <tr><th>Kapasitas nominal</th><td>90 kWh</td></tr>
+    <tr><th>Tegangan nominal</th><td>400 V</td></tr>
+    <tr><th>Kimia sel</th><td>LFP (lithium besi fosfat)</td></tr>
+    <tr><th>Berat pack</th><td>520 kg</td></tr>
+    <tr><th>Pendinginan</th><td>Cairan aktif</td></tr>
+    <tr><th>Suhu operasi</th><td>−20 °C sampai 55 °C</td></tr>
+    <tr><th>Pengisian cepat DC</th><td>Hingga 150 kW</td></tr>
+    <tr><th>Proteksi casing</th><td>IP67</td></tr>
+    <tr><th>Garansi</th><td>8 tahun atau 200.000 km, kapasitas minimal 70%</td></tr>
+   </tbody></table>
+  </div>
+ </section>
+
+ <section>
+  <div class="wrap" style="max-width:860px">
+   <h2 class="h2">Pertanyaan yang sering diajukan.</h2>
+   <div style="margin-top:32px">
+    <details><summary>Apakah Aegis cocok untuk kendaraan yang sudah beredar?</summary><p>Aegis tersedia untuk beberapa platform kendaraan. Kirim merek, tipe, dan tahun kendaraan Anda lewat formulir kontak agar tim teknis kami memeriksa kecocokannya.</p></details>
+    <details><summary>Apa yang dicakup garansi 8 tahun?</summary><p>Garansi mencakup cacat produksi dan penurunan kapasitas di bawah 70% selama 8 tahun atau 200.000 km, mana yang tercapai lebih dulu. Syarat lengkapnya tertulis di kontrak.</p></details>
+    <details><summary>Berapa lama pemasangan dan servis berkala?</summary><p>Penggantian pack memerlukan sekitar 1 hari kerja di bengkel mitra. Pemeriksaan berkala dianjurkan setiap 12 bulan dan sudah termasuk dalam paket garansi.</p></details>
+    <details><summary>Bagaimana nasib baterai setelah masa pakainya habis?</summary><p>Voltera mengambil kembali pack purna pakai dari pelanggan korporat. Modul yang masih layak dipakai ulang untuk penyimpanan energi, sisanya didaur ulang.</p></details>
+   </div>
+  </div>
+ </section>
+
+ <div class="cta">
+  <div class="wrap">
+   <div><h2>Butuh perhitungan untuk kendaraan Anda?</h2><p>Kami menyiapkan estimasi biaya dan jadwal pemasangan setelah mengetahui jenis dan jumlah unit.</p></div>
+   <a class="btn" href="#/kontak">Minta penawaran</a>
+  </div>
+ </div>
+</main>
+
+<footer>
+ <div class="wrap">
+  <p>© 2026 Voltera Energi Nusantara. Seluruh angka, sertifikasi, dan alamat pada halaman ini adalah data contoh untuk keperluan desain dan perlu diganti dengan data resmi sebelum rilis.</p>
+  <p><a href="#/">Beranda</a> &nbsp; <a href="#/produk">Produk Aegis</a> &nbsp; <a href="#/kontak">Kontak</a></p>
+ </div>
+</footer>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ilustrasi pack baterai: sel terisi sesuai level */
+$$('svg[data-pack]').forEach(function(sv){
+ var lv=parseFloat(sv.dataset.pack),cols=10,rows=5,h='<rect x="10" y="10" width="396" height="218" rx="16" fill="none" stroke="#86A3AB" stroke-width="3"/><rect x="408" y="88" width="14" height="62" rx="4" fill="#86A3AB"/>';
+ for(var c=0;c<cols;c++)for(var r=0;r<rows;r++){h+='<rect x="'+(26+c*37)+'" y="'+(26+r*38)+'" width="29" height="30" rx="4" fill="'+(c<Math.round(cols*lv)?'#F2B134':'rgba(255,255,255,.13)')+'"/>'}
+ h+='<text x="10" y="266" fill="#EAF2F1" font-family="Schibsted Grotesk,sans-serif" font-weight="700" font-size="17">Aegis LFP 90</text><text x="406" y="266" text-anchor="end" fill="#B9CDD1" font-family="Public Sans,sans-serif" font-size="15">Terisi '+Math.round(lv*100)+'%</text>';
+ sv.innerHTML=h});
+
+/* slider */
+var sl=$$('.slide'),ce=$$('.cell'),hero=$('#hero'),cur=0,tm,paused=false;
+function go(n){
+ cur=(n+sl.length)%sl.length;
+ sl.forEach(function(s,i){s.classList.toggle('on',i===cur);s.setAttribute('aria-hidden',i!==cur)});
+ ce.forEach(function(c,i){c.classList.remove('on','done');void c.offsetWidth;if(i<cur)c.classList.add('done');if(i===cur)c.classList.add('on');c.setAttribute('aria-selected',i===cur)});
+ $('#cnt').textContent='Slide '+(cur+1)+' dari '+sl.length;
+ clearTimeout(tm);if(!paused&&!rm)tm=setTimeout(function(){go(cur+1)},7000)}
+ce.forEach(function(c,i){c.onclick=function(){go(i)}});
+$('#pv').onclick=function(){go(cur-1)};$('#nx').onclick=function(){go(cur+1)};
+var pb=$('#ps');
+pb.onclick=function(){paused=!paused;hero.classList.toggle('p',paused);pb.textContent=paused?'Putar':'Jeda';pb.setAttribute('aria-pressed',paused);if(paused)clearTimeout(tm);else go(cur)};
+hero.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(cur+1);if(e.key==='ArrowLeft')go(cur-1)});
+var x0=null;hero.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+hero.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(cur+(d<0?1:-1));x0=null});
+if(rm){paused=true;pb.hidden=true}
+
+/* router berbasis hash */
+var T={home:'Voltera Energi | Baterai kendaraan listrik Aegis LFP 90',produk:'Aegis LFP 90 | Keunggulan dan spesifikasi | Voltera'};
+function route(){
+ var h=location.hash.replace(/^#\/?/,''),p=h==='produk';
+ $('#home').hidden=p;$('#produk').hidden=!p;document.title=p?T.produk:T.home;
+ $$('nav a[data-r]').forEach(function(a){a.removeAttribute('aria-current')});
+ var act=$('nav a[data-r="'+(p?'produk':'home')+'"]');if(h===''||p)act.setAttribute('aria-current','page');
+ $('#nv').classList.remove('o');$('#mt').setAttribute('aria-expanded','false');
+ var tg=!p&&h&&document.getElementById(h);
+ if(tg)setTimeout(function(){tg.scrollIntoView()},30);else window.scrollTo({top:0,behavior:'instant'});
+ if(!p)go(0);else{clearTimeout(tm);reveal()}}
+window.addEventListener('hashchange',route);
+
+/* grafik perbandingan: terisi saat terlihat */
+var io;function reveal(){var c=$('#cmp');if(!c)return;c.classList.remove('in');
+ if(!('IntersectionObserver' in window)){c.classList.add('in');return}
+ io&&io.disconnect();io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){c.classList.add('in');io.disconnect()}})},{threshold:.35});io.observe(c)}
+$$('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();document.getElementById(a.dataset.sc).scrollIntoView()}});
+
+/* menu mobile */
+$('#mt').onclick=function(){var o=$('#nv').classList.toggle('o');this.setAttribute('aria-expanded',o)};
+
+/* formulir kontak */
+$('#fm').addEventListener('submit',function(e){
+ e.preventDefault();var ok=true;
+ function chk(id,eid,bad,msg){var el=$(id);el.setAttribute('aria-invalid',bad);$(eid).textContent=bad?msg:'';if(bad&&ok){el.focus();ok=false}}
+ chk('#nm','#e-nm',!$('#nm').value.trim(),'Isi nama Anda.');
+ chk('#em','#e-em',!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('#em').value),'Masukkan email yang valid, misalnya nama@perusahaan.com.');
+ chk('#ps2','#e-ps',$('#ps2').value.trim().length<10,'Tulis kebutuhan Anda minimal 10 karakter.');
+ if(!ok)return;
+ var o=$('#ok');o.hidden=false;o.textContent='Terima kasih, '+$('#nm').value.trim()+'. Pesan Anda sudah kami catat dan tim teknis akan membalas ke '+$('#em').value.trim()+' dalam 1×24 jam kerja.';
+ this.reset()});
+
+route();if(!location.hash)go(0);
+})();
+</script>
+</body>
+</html>
