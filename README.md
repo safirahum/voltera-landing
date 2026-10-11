@@ -7,6 +7,7 @@ A two-page marketing site for a fictional EV battery company, built with plain H
 
 ## Project structure
 
+.
 ├── index.html   # Markup for both pages
 ├── styles.css   # All styling, driven by CSS variables
 ├── script.js    # Slider, page routing, chart reveal, mobile menu, form validation
